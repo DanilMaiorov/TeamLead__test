@@ -1,0 +1,99 @@
+.ingredients {
+    background-color: #333;
+    box-shadow: 0px 5px 5px 0px rgba(255, 255, 255, 0.2) inset;
+}
+.ingredients__title {
+    position: relative;
+    color: #fff;
+}
+.ingredients__title::after {
+    content: "";
+    position: absolute;
+    top: 140px;
+    left: 0px;
+    width: 50%;
+    height: 1px;
+    background-color: rgba(118, 116, 116, 0.5);
+}
+.ingredients__content {
+    padding-bottom: 195px;
+}
+.ingredients__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 220px);
+    row-gap: 30px;
+    position: relative;
+}
+.ingredients__item {
+    display: flex;
+    align-items: center;
+}
+.ingredients__item-img {
+    padding: 0px 0px 55% 0px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex: 0 0 55%;
+    width: 100%;
+    position: relative;
+    transition: all 0.3s;
+}
+.ingredients__item-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s;
+} 
+.ingredients__item-img img:hover {
+    transform: scale(1.1);
+} 
+.ingredients__item--one {
+
+}
+.ingredients__item--two {
+    grid-column: 1/2;
+}
+.ingredients__item--three {
+    grid-column: 1/2;
+}
+.ingredients__item--four {
+    grid-column: 3/4;
+    grid-row: -4/-3;
+    flex-direction: row-reverse;
+}
+.ingredients__item--five {
+    grid-row: -2/-3;
+    grid-column: 3/4;
+    flex-direction: row-reverse;
+}
+.ingredients__item--six {
+    grid-column: 3/4;
+    flex-direction: row-reverse;
+}
+.ingredients__item-description {
+    margin: 0 15px;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: 'Padauk', sans-serif;
+    text-align: center;
+    color: #fff;
+}
+.ingredients__product {
+    grid-row: 1/4;
+    grid-column: 2/3;
+    justify-self: center;
+    align-self: center;
+    padding: 30px;
+}
+.ingredients__button {
+    background-color: #fff;
+    color: #333;
+    grid-column: 2/3;
+    align-self: flex-start;
+    justify-self: center;
+    transition: all 0.3s;
+}
+.ingredients__button:hover {
+    background-color: rgb(196, 191, 191);
+}

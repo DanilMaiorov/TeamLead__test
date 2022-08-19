@@ -1,0 +1,77 @@
+
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    //font-family: 'Padauk', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.container {
+    max-width: 1220px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.title {
+    margin-top: 100px;
+    margin-bottom: 80px;
+    font-family: 'Padauk', sans-serif;
+    font-size: 52px;
+    line-height: 120%;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #333;
+    display: inline-block;
+}
+.wrapper {
+    margin: 0 auto;
+}
+.button {
+    width: 300px;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 0;
+    letter-spacing: 5px;
+    font-family: serif;
+    color: #fff;
+    background-color: #333;
+    font-family: 'Manrope', sans-serif;
+    cursor: pointer;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    border: none;
+}
+.button:hover {
+    background-color: rgb(64, 61, 61);
+}
+
+@import './header.scss';
+@import './ingredients.scss';
+@import './slider.scss';
+@import './about.scss';
+@import './order.scss';
+@import './media.scss';
